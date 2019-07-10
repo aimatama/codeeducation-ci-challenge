@@ -3,7 +3,7 @@ package main
 import "testing"
 
 func TestSum(t *testing.T) {
-	result := Sum(5, 5)
+	result := soma(5, 5)
 	expected := 10
 
     if result != expected {
