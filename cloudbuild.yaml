@@ -1,0 +1,12 @@
+steps:
+
+- id: 'Instalando o app ci_challenge'
+  name: 'gcr.io/cloud-builders/go'
+  args: ['install', 'ci_challenge']
+  env: ['GOPATH=.']
+
+- id: 'Executando Teste Unitário'
+  name: 'gcr.io/cloud-builders/go'
+  args: ['test', '-v','./...']
+  env: ['GOPATH=.']
+
