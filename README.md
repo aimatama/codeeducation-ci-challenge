@@ -11,5 +11,7 @@ Essa função deverá ser chamada na função main do programa. Quando executada
 3) Ative um processo de CI que execute os seguintes passos:
 
     Executar o teste unitário
+
     Push da imagem gerada no processo de CI no Container Registry do GCP
+    
     Ative a App do Cloud Build no Github para que cada pull request execute automaticamente o processo de CI
